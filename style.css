@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#home{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./assets/murumbi2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    position: relative;
+}
+
+#home main{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    place-items: center;
+    height: 100%;
+    gap: 40px;
+    
+}
+
+#home .links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#home .links img{
+    display: flex;
+    max-width: 100%;
+    height: max-content;
+}
+
+#home .beneficios{
+    overflow: hidden;
+}
+
+#home  .beneficios img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+#home .pequena{
+    display: none !important;
+}
+
+#home .redes{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+#home  .redes div{
+    background-color: rgb(254, 220, 0);
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#home  .redes div:nth-child(1){
+    background-color:  rgb(58, 88, 151);
+}
+
+#home .redes div:nth-child(2){
+    background-color:  #00acee;
+}
+
+#home  .redes div:nth-child(3){
+    background-color: rgb(233, 52, 101) ;
+}
+
+#home  .redes div:nth-child(4){
+    background-color:  #ff2222;
+}
+
+#home .redes div:hover{
+    transform: translateY(-5px);
+}
+
+
+
+@media (max-width:1000px){
+    #home {
+        padding: 60px 40px 40px 40px;
+    }
+
+    #home main{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        place-items: initial;
+        gap: 100px;
+        align-self: start;
+        align-content: start;
+    }
+
+    #home .links{
+        grid-row: 1;
+        height: max-content;
+    }
+
+    #home .beneficios .grande{
+        display: none !important;
+    }
+
+    #home .pequena{
+        display: block !important;
+    }
+    
+}
