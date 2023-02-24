@@ -1,0 +1,97 @@
+.loja-header-bg{
+    background-color: rgb(160, 18, 21);
+}
+
+.loja-header{
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.loja-header-pesquisa p{
+    color: white;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+.loja-header-busca{
+    height: 45px;
+    width: 100%;
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.loja-header-busca input{
+    outline: none;
+    box-sizing: border-box;
+    padding: 3px 10px;
+    border: none;
+    font-size: 1rem;
+}
+
+
+.loja-header-lupa{
+    height: 100%;
+    width: 45px;
+    display: block;
+    background-color: black;
+}
+
+.loja-header-logo img{
+    width: 300px;
+}
+
+.loja-header-menus p,
+.loja-header-menus a{
+    color: white;
+    display: inline-block;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.loja-header-menus a:hover{
+    text-decoration: none;
+}
+
+.loja-header-menus p{
+    position: relative;
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+.loja-header-menus p::after{
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url('./../../assets/icons/arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute; 
+    right: -22px ;
+    top: 0px;
+}
+
+.loja-header-menus p::before{
+    content: '';
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url('./../../assets/icons/person-fill.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute; 
+    left: -30px;
+    top: -2px;
+}
+
+
