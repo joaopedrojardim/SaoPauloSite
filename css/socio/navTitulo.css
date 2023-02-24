@@ -1,0 +1,97 @@
+.socio-titulo-bg{
+    background: url('./../../assets/socio/murumbi.jpg') no-repeat center ;
+    background-size: cover;
+}
+
+.socio-titulo{
+    max-width: 900px;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.socio-titulo img{
+    max-width: 100%;
+    width: 560px;
+    margin-bottom: 30px;
+}
+
+.socio-titulo p{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 800;
+    max-width: 45ch;
+    line-height: 1.1;
+    margin-bottom: 60px;
+}
+
+.socio-titulo p span{
+    color: #b11116;
+}
+
+.socio-titulo a{
+    background-color: #b11116;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.socio-titulo a:hover{
+    background-color: #8a0b0f;
+}
+
+@media (max-width: 800px){
+    .socio-titulo{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .socio-titulo p{
+        font-size: 1.2rem;
+        max-width: 52ch;
+        margin-bottom: 40px;
+    }
+
+    .socio-titulo img{
+        max-width: 100%;
+        width: 560px;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 550px){
+
+        .socio-titulo p{
+            font-size: 1rem;
+            max-width: 52ch;
+            margin-bottom: 40px;
+        }
+
+        .socio-titulo{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    .socio-titulo p{
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 320px){
+    .socio-titulo a{
+        background-color: #b11116;
+        color: white;
+        padding: 12px 24px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-style: italic;
+        font-weight: 700;
+        font-size: .9rem;
+    }
+}
