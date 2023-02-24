@@ -15,8 +15,6 @@
     padding-right: 20px;
 }
 
-
-
 .loja-header-pesquisa p{
     color: white;
     font-size: 0.8rem;
@@ -48,6 +46,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .loja-header-lupa i{
@@ -59,9 +58,7 @@
     width: 300px;
 }
 
-.loja-header-logo a:nth-child(2){
-    display: none;
-}
+
 
 .loja-header-menus > p,
 .loja-header-menus > a{
@@ -96,9 +93,7 @@
     border-radius: 4px;
 }
 
-.loja-header-menu.ativo{
-    display: block;
-}
+
 
 .loja-header-menu a{
     color: white;
@@ -112,17 +107,17 @@
 .loja-header-menu a:hover{
     color: black;
 }
-
-.loja-header-menus .loja-header-menu:hover{
-    display: block;
-}
+.loja-header-menu.ativo,
+.loja-header-menus .loja-header-menu:hover,
 .loja-header-menus p:hover ~ .loja-header-menu{
     display: block;
 }
 
-.loja-header-menus p:hover ~ .loja-header-menu.ativo{
+.loja-header-logo a:nth-child(2),
+.loja-header-menu a:last-child{
     display: none;
 }
+
 
 .loja-header-menus{
     position: relative;
@@ -158,11 +153,13 @@
 
 @media (max-width:900px){
 
-    .loja-header-logo  a:nth-child(1){
+    .loja-header-menus > a,
+    .loja-header-logo a:nth-child(1){
         display: none;
     }
     
-    .loja-header-logo  a:nth-child(2){
+    .loja-header-logo a:nth-child(2),
+    .loja-header-menu a:last-child{
         display: block;
     }
 
@@ -171,11 +168,6 @@
         width: 100%;
         object-fit: contain;
     }
-
-    .loja-header-menus > a{
-        display: none;
-    }
-    
 }
 
 @media (max-width:600px){
@@ -185,7 +177,7 @@
     }
 
     .loja-header-menus p::before{
-        top: 0px;
+        top: 5px;
         left: 0;
         width: 30px;
         height: 30px;
