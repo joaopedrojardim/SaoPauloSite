@@ -6,6 +6,10 @@
 @import './socio/navSocio.css';
 @import './socio/navTitulo.css';
 @import './socio/footerSocio.css';
+/* Socio - Parceiros */
+@import './socio/parceiros/lista-parceiros.css';
+
+
 /* Loja */
 
 @import './loja/navLoja.css';
