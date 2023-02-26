@@ -1,0 +1,114 @@
+
+.s-e-nav{
+    max-width: 1200px;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    margin: auto;
+    padding-right: 40px;
+}
+
+.s-e-nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.s-e-nav a:hover{
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.s-e{
+    background-color: #eee;
+}
+.s-e-container{
+    max-width: 1200px;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: auto;
+    justify-content: center;
+    padding: 50px 20px 100px 20px;
+    position: relative;
+    display: none;
+}
+
+.s-e-container.ativo{
+    display: flex;
+}
+
+.s-e-container::before{
+    content: '';
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #b11116;
+    position: absolute;
+    top: 0;
+    right: 107px;
+}
+
+.s-e-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 340px;
+    box-sizing: border-box;
+    padding: 25px 20px 10px;
+    border-radius: 15px;
+    font-family: 'Open Sans';
+    position: relative;
+    background-color: white;
+}
+
+.s-e-card h3{
+    font-weight: 900;
+    font-size: 1.3rem;
+    margin-top: 5px;
+    text-transform: uppercase;
+    line-height: .9;
+    text-align: center;
+}
+
+.s-e-card div{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.s-e-card div img{
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.s-e-card p{
+    font-size: 0.8rem;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.s-ec-container{
+    display: none;
+}
+.s-ec-container.ativo{
+    display: flex;
+}
+
+@media (max-width: 759px){
+    .s-e-card{
+        min-width: 100%;
+    }
+}
