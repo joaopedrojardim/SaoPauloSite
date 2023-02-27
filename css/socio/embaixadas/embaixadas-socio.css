@@ -1,0 +1,44 @@
+.s-em-container{
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Open Sans';
+}
+
+.s-em-container h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.s-em-container h1 span{
+    font-weight: 900;
+}
+
+.s-em-container p{
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.s-em-embaixadas{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.s-em-embaixadas-pesquisa{
+    display: flex;
+    justify-content: end;
+}
+
+.s-em-embaixadas-lista{
+    height: 400px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}

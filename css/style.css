@@ -10,7 +10,10 @@
 @import './socio/parceiros/lista-parceiros.css';
 
 /* Socio - Experiencia */
-@import './socio//experiencias/experiencias-socio.css';
+@import './socio/experiencias/experiencias-socio.css';
+
+/* Socio - Embaixadas */
+@import './socio/embaixadas/embaixadas-socio.css';
 
 
 /* Loja */
