@@ -5,18 +5,18 @@
     justify-content: end;
     gap: 20px;
     margin: auto;
-    padding-right: 40px;
 }
 
 .s-e-nav a{
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 0px;
     color: black;
     text-transform: uppercase;
     font-family: 'Open Sans';
     font-weight: 600;
     font-size: .9rem;
+    margin-right: 20px;
 }
 
 .s-e-nav a:hover{
@@ -35,6 +35,7 @@
     padding: 50px 20px 100px 20px;
     position: relative;
     display: none;
+    box-sizing: border-box;
 }
 
 .s-e-container.ativo{
@@ -51,7 +52,7 @@
     border-top: 10px solid #b11116;
     position: absolute;
     top: 0;
-    right: 107px;
+    right: 70px;
 }
 
 .s-e-card{
@@ -107,8 +108,166 @@
     display: flex;
 }
 
+
+
+
+/* Catalogo */
+.s-ec-container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.s-ec-container::before{
+    content: '';
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #b11116;
+    position: absolute;
+    top: 0;
+    right: 205px;
+}
+
+.s-ec-busca{
+    min-width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: gray;
+    margin-top: 20px;
+}
+
+.s-ec-cards{
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.s-ec-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    box-sizing: border-box;
+    padding: 25px 20px 10px;
+    border-radius: 15px 15px 0 0 ;
+    font-family: 'Open Sans';
+    background-color: white;
+    position: relative;
+}
+
+.s-ec-card:nth-child(n + 3){
+    filter:  grayscale(100%);
+}
+
+.s-ec-card h3{
+    font-weight: 900;
+    font-size: 1.6rem;
+    margin-top: 5px;
+    text-transform: uppercase;
+    line-height: .85;
+    text-align: center;
+}
+
+.s-ec-card div{
+    height: 240px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #b11116;
+}
+
+.s-ec-card div img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.s-ec-card p{
+    font-size: 0.8rem;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.s-ec-card span{
+    text-align: start;
+    display: inline-block;
+    width: 100%;
+    font-size: .7rem;
+    color: #BF9240;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.s-ec-card a{
+    width: 90%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #b11116;
+    position: absolute;
+    bottom: -10px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.s-ec-card a:hover{
+    background-color: #9e1115;
+}
+.s-ec-container{
+    display: none;
+}
+.s-ec-container.ativo{
+    display: flex;
+}
+
+@media (max-width: 779px){
+    .s-ec-card{
+        min-width: 100%;
+    }
+
+    .s-ec-cards{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 @media (max-width: 759px){
     .s-e-card{
         min-width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+        
+    .s-e-nav{
+        padding-right: 0px;
+    }
+
+    .s-e-nav a{
+        font-size: .8rem;
+    }
+
+    .s-e-container::before{
+        right: 60px;
+    }
+
+    .s-ec-container::before{
+        right: 190px;
     }
 }
