@@ -23,22 +23,132 @@
 }
 
 .s-em-embaixadas{
+    height: 600px;
     min-width: 100%;
     display: flex;
     flex-direction: column;
     background-color: white;
     box-sizing: border-box;
-    padding: 30px;
+    padding: 30px 30px 30px 60px;
+    margin-bottom: 100px;
 }
 
 .s-em-embaixadas-pesquisa{
     display: flex;
     justify-content: end;
+    padding-bottom: 30px;
 }
 
+.s-em-embaixadas-pesquisa input{
+    width: 500px;
+    height: 30px;
+    padding: 3px;
+    border: 4px solid white;
+    border: 4px solid black;
+    border-radius: 8px;
+    outline: none
+}
+
+.s-em-embaixadas-pesquisa input:focus{
+    border: 4px solid #cf242477;
+}
+
+
 .s-em-embaixadas-lista{
-    height: 400px;
     overflow-y: auto;
+    
+    padding-bottom: 50px;
+    
+}
+
+.s-em-embaixadas-lista::-webkit-scrollbar {
+    width: 8px;            /* width of the entire scrollbar */
+}
+  
+.s-em-embaixadas-lista::-webkit-scrollbar-track {
+    background: #888;        /* color of the tracking area */
+}
+
+.s-em-embaixadas-lista::-webkit-scrollbar-thumb {
+    background-color: black;  /* creates padding around scroll thumb */
+  }
+.s-em-embaixadas-lista-conteudo{
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 7fr 3fr;
+    align-items: start;
+    border-bottom: 2px solid  #ccc;
+}
+
+
+.s-em-embaixadas-lista-1 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.s-em-embaixadas-lista-1-image{
+    grid-row: 1/3;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+}
+.s-em-embaixadas-lista-1-image img{
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.s-em-embaixadas-lista-1-titulo{
+    display: flex;
+    align-items: center;
+}
+
+.s-em-embaixadas-lista-1 p{
+    margin: 0;
+    display: inline-block;
+}
+
+.s-em-embaixadas-lista-1 span{
+    font-weight: 700;
+}
+
+.s-em-embaixadas-lista-1 h2{
+    font-size: 1rem;
+    display: inline-block;
+    color: #BF9240;
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+.s-em-embaixadas-lista-2{
+    background-color: #7a3918;
+    margin-right : 80px;
+}
+
+.s-em-embaixadas-lista-dados{
+    height: 100%;
+    width: 100%;
+    background-color: #BF9240;
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.s-em-embaixadas-mostrar-dados{
+    position: absolute;
+    right: -40px;
+}
+
+.s-em-embaixadas-dados.ativo{
+    display: block;
+}
+
+.s-em-embaixadas-dados{
+    display: none;
 }
