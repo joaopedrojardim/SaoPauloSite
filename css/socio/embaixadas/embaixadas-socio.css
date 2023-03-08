@@ -56,7 +56,6 @@
 
 .s-em-embaixadas-lista{
     overflow-y: auto;
-    
     padding-bottom: 50px;
     
 }
@@ -77,6 +76,7 @@
     grid-template-columns: 7fr 3fr;
     align-items: start;
     border-bottom: 2px solid  #ccc;
+    position: relative;
 }
 
 
@@ -127,28 +127,62 @@
 }
 
 .s-em-embaixadas-lista-2{
-    background-color: #7a3918;
-    margin-right : 80px;
+    margin-right : 40px;
+    align-items: end;
+    align-self: flex-end;
+    align-content: end;
+    margin-top: 60px;
+
 }
 
 .s-em-embaixadas-lista-dados{
-    height: 100%;
-    width: 100%;
-    background-color: #BF9240;
     display: flex;
     justify-content: end;
-    position: relative;
+    width: 100%;
+    
 }
 
 .s-em-embaixadas-mostrar-dados{
     position: absolute;
-    right: -40px;
+    right: 20px;
+    top: 30px;
 }
 
-.s-em-embaixadas-dados.ativo{
+.s-em-embaixadas-mostrar-dados::before{
+    content: 'aa';
+    position: absolute;
+    left: -20px;
+}
+
+.js-conteudo-embeixadas.ativo{
     display: block;
 }
 
-.s-em-embaixadas-dados{
+.js-conteudo-embeixadas.ativo{
+    text-align: end;
+}
+
+.js-conteudo-embeixadas.ativo p{
+    margin: 0;
+    color: #333;
+}
+
+.js-conteudo-embeixadas.ativo p span{
+    font-weight: 800;
+    font-size: .9rem;
+}
+
+.js-conteudo-embeixadas.ativo p:nth-child(4){
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.js-conteudo-embeixadas.ativo a{
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+.js-conteudo-embeixadas{
     display: none;
 }
